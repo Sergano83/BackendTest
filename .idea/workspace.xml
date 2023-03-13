@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="764a652f-e40c-4056-835a-6f1e87dac7a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SpoonacularTest.java" afterDir="false" />
+    <list default="true" id="764a652f-e40c-4056-835a-6f1e87dac7a7" name="Changes" comment="Урок 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/api/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/api/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/dto/GetCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/utils/LoggingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson5/utils/RetrofitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/CreateProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/GetCategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/ModifyProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +28,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson4" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MVOcASrXlg6Qa2ukvx56C2xoLc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,11 +56,106 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/учеба/Тестирование backend/BackendTest/pom.xml",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Lesson5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GetCategoryTest.getCategoryByIdPositiveTest">
+    <configuration name="CreateProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="Lesson5.CreateProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="Lesson5.GetCategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCategoryTest.getCategoryByIdPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="Lesson5.GetCategoryTest" />
+      <option name="METHOD_NAME" value="getCategoryByIdPositiveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="Lesson5.ModifyProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Utils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="Lesson5.Utils" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
+        <item itemvalue="JUnit.GetCategoryTest" />
+        <item itemvalue="JUnit.ModifyProductTest" />
+        <item itemvalue="JUnit.Utils" />
+        <item itemvalue="JUnit.CreateProductTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +165,28 @@
       <option name="presentableId" value="Default" />
       <updated>1677849365252</updated>
     </task>
+    <task id="LOCAL-00001" summary="Урок 3">
+      <created>1677855021731</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677855021731</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Урок 3 финал">
+      <created>1678369781153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678369781153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Урок 3 финал">
+      <created>1678449144138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678449144138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,5 +199,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Урок 3" />
+    <MESSAGE value="Урок 3 финал" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 3 финал" />
   </component>
 </project>
